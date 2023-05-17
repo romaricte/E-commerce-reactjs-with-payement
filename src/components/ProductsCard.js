@@ -8,13 +8,14 @@ import { ToastContainer, toast } from "react-toastify";
 const ProductsCard = ({ product }) => {
    const dispatch = useDispatch();
   const navigate = useNavigate();
-  const _id = product.title;
+  const _id = product.title;  
   const idString = (_id) => {
     return String(_id).toLowerCase().split(" ").join("");
   };
   const rootId = idString(_id);
+  
   const handleDetails = () => {
-    navigate(`/product/${rootId}`, {
+    navigate(`/product/${rootId}` , {
       state: {
         item: product,
       },
@@ -32,6 +33,7 @@ const ProductsCard = ({ product }) => {
           alt="productImg"
         />
       </div>
+      
       <div className="w-full border-[1px] px-2 py-4">
         <div className="flex justify-between items-center">
           <div>

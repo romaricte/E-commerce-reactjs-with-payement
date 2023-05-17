@@ -9,6 +9,8 @@ const Product = () => {
    const dispatch = useDispatch();
   const [details, Details] = useState({});
   let [baseQty, setBaseQty] = useState(1);
+
+  // pour localiser la fontion (handlDetail) dans le productCard et l'utiliser
   const location = useLocation();
   useEffect(() => {
     Details(location.state.item);

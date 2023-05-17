@@ -16,7 +16,7 @@ const CartItem = () => {
   const productData = useSelector((state) => state.bazar.productData);
   return (
     <div className="w-2/3 pr-10">
-      <div className="w-full">
+      <d iv className="w-full">
         <h2 className="font-titleFont text-2xl">shopping cart</h2>
         <div>
           <div>
@@ -94,7 +94,7 @@ const CartItem = () => {
             Reset Cart
           </button>
         </div>
-      </div>
+      </d>
       <Link to="/">
         <button className="mt-8 ml-7 flex items-center gap-1 text-gray-400 hover:text-black duration-300">
           <span>
